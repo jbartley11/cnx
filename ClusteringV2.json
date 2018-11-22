@@ -1,0 +1,1179 @@
+{
+    "version": 26,
+    "headerPanel": {
+        "type": "headerPanel",
+        "size": "medium",
+        "title": "Clustering Review",
+        "showMargin": false,
+        "backgroundImageSizing": "fit-height",
+        "normalBackgroundImagePlacement": "left",
+        "horizontalBackgroundImagePlacement": "top",
+        "showSignOutMenu": true,
+        "menuLinks": [],
+        "selectors": [
+            {
+                "datasets": [
+                    {
+                        "type": "serviceDataset",
+                        "dataSource": {
+                            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                        },
+                        "outFields": [
+                            "*"
+                        ],
+                        "groupByFields": [
+                            "eps"
+                        ],
+                        "orderByFields": [
+                            "eps asc"
+                        ],
+                        "statisticDefinitions": [
+                            {
+                                "onStatisticField": "eps",
+                                "outStatisticFieldName": "count_result",
+                                "statisticType": "count"
+                            }
+                        ],
+                        "maxFeatures": 50,
+                        "querySpatialRelationship": "esriSpatialRelIntersects",
+                        "returnGeometry": false,
+                        "clientSideStatistics": false,
+                        "name": "main"
+                    }
+                ],
+                "type": "categorySelectorWidget",
+                "category": {
+                    "type": "groupByValues",
+                    "nullLabel": "Null",
+                    "blankLabel": "Blank",
+                    "labelOverrides": [
+                        {
+                            "key": 60.96,
+                            "label": 60.96
+                        },
+                        {
+                            "key": 121.92,
+                            "label": 121.92
+                        },
+                        {
+                            "key": 45.72,
+                            "label": 45.72
+                        },
+                        {
+                            "key": 106.68,
+                            "label": 106.68
+                        },
+                        {
+                            "key": 30.48,
+                            "label": 30.48
+                        },
+                        {
+                            "key": 76.2,
+                            "label": 76.2
+                        },
+                        {
+                            "key": 91.44,
+                            "label": 91.44
+                        }
+                    ]
+                },
+                "selection": {
+                    "type": "single",
+                    "defaultSelection": "first",
+                    "operator": "equal",
+                    "noneLabelPlacement": "first",
+                    "noneLabel": "All"
+                },
+                "preferredDisplayType": "dropdown",
+                "displayThreshold": 10,
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "3d012bfa-0daa-48cd-8eb5-2633b430e377#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "623c96fa-d5d9-419f-9028-25d3365abb21#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "846df958-0d36-4de3-aab5-b6f454949a6f#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "4956f242-9e1b-4a8d-b72d-9c5e51c4dea1#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "e3061380-59ea-4d73-a654-526427c612a0#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "2eedf2f2-65cd-455f-9c0b-dc7bba5796bb",
+                "name": "EPSSelector",
+                "caption": "EPS:",
+                "showLastUpdate": true,
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            },
+            {
+                "datasets": [
+                    {
+                        "type": "serviceDataset",
+                        "dataSource": {
+                            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                        },
+                        "outFields": [
+                            "*"
+                        ],
+                        "groupByFields": [
+                            "min_samples"
+                        ],
+                        "orderByFields": [
+                            "min_samples asc"
+                        ],
+                        "statisticDefinitions": [
+                            {
+                                "onStatisticField": "min_samples",
+                                "outStatisticFieldName": "count_result",
+                                "statisticType": "count"
+                            }
+                        ],
+                        "maxFeatures": 50,
+                        "querySpatialRelationship": "esriSpatialRelIntersects",
+                        "returnGeometry": false,
+                        "clientSideStatistics": false,
+                        "name": "main"
+                    }
+                ],
+                "type": "categorySelectorWidget",
+                "category": {
+                    "type": "groupByValues",
+                    "nullLabel": "Null",
+                    "blankLabel": "Blank",
+                    "labelOverrides": [
+                        {
+                            "key": 21,
+                            "label": 21
+                        },
+                        {
+                            "key": 18,
+                            "label": 18
+                        },
+                        {
+                            "key": 15,
+                            "label": 15
+                        },
+                        {
+                            "key": 12,
+                            "label": 12
+                        },
+                        {
+                            "key": 8,
+                            "label": 8
+                        },
+                        {
+                            "key": 5,
+                            "label": 5
+                        }
+                    ]
+                },
+                "selection": {
+                    "type": "single",
+                    "defaultSelection": "first",
+                    "operator": "equal",
+                    "noneLabelPlacement": "first",
+                    "noneLabel": "All"
+                },
+                "preferredDisplayType": "dropdown",
+                "displayThreshold": 10,
+                "events": [
+                    {
+                        "type": "selectionChanged",
+                        "actions": [
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "3d012bfa-0daa-48cd-8eb5-2633b430e377#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "623c96fa-d5d9-419f-9028-25d3365abb21#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "846df958-0d36-4de3-aab5-b6f454949a6f#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "2eedf2f2-65cd-455f-9c0b-dc7bba5796bb#main"
+                            },
+                            {
+                                "type": "filter",
+                                "by": "whereClause",
+                                "fieldMap": [],
+                                "targetId": "e3061380-59ea-4d73-a654-526427c612a0#main"
+                            }
+                        ]
+                    }
+                ],
+                "id": "4956f242-9e1b-4a8d-b72d-9c5e51c4dea1",
+                "name": "MinSamplesSelector",
+                "caption": "Min Samples: ",
+                "showLastUpdate": true,
+                "showCaptionWhenNoData": true,
+                "showDescriptionWhenNoData": true
+            }
+        ]
+    },
+    "widgets": [
+        {
+            "type": "mapWidget",
+            "flashRepeats": 3,
+            "itemId": "812e6fc6b339490294f13ebfe458c7b4",
+            "mapTools": [
+                {
+                    "type": "legendTool"
+                },
+                {
+                    "type": "mapContentsTool"
+                },
+                {
+                    "type": "bookmarksTool"
+                },
+                {
+                    "type": "basemapGalleryTool"
+                }
+            ],
+            "showNavigation": true,
+            "showPopup": true,
+            "scalebarStyle": "none",
+            "layers": [
+                {
+                    "type": "featureLayerDataSource",
+                    "layerId": "ClusteringResults_6964",
+                    "name": "ClusteringResults"
+                }
+            ],
+            "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517",
+            "name": "Map (1)",
+            "showLastUpdate": true,
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "serialChartWidget",
+            "category": {
+                "labelOverrides": [],
+                "byCategoryColors": false,
+                "labelsPlacement": "default",
+                "labelRotation": 0,
+                "fieldName": "cluster",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "labelFormat": {
+                "name": "label",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "datePeriodPatterns": [
+                {
+                    "period": "ss",
+                    "pattern": "HH:mm:ss"
+                },
+                {
+                    "period": "mm",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "hh",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "DD",
+                    "pattern": "MMM d"
+                },
+                {
+                    "period": "MM",
+                    "pattern": "MMM"
+                },
+                {
+                    "period": "YYYY",
+                    "pattern": "yyyy"
+                }
+            ],
+            "chartScrollbar": {
+                "enabled": false,
+                "dragIcon": "dragIconRoundSmall",
+                "dragIconHeight": 20,
+                "dragIconWidth": 20,
+                "scrollbarHeight": 15
+            },
+            "categoryAxis": {
+                "titleRotation": 0,
+                "gridPosition": "start",
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "parseDates": false,
+                "minPeriod": "DD"
+            },
+            "valueAxis": {
+                "titleRotation": 270,
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "stackType": "none",
+                "integersOnly": false,
+                "logarithmic": false
+            },
+            "legend": {
+                "enabled": false,
+                "position": "bottom",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 0
+            },
+            "graphs": [
+                {
+                    "valueField": "value",
+                    "lineColor": "#ffaa00",
+                    "lineColorField": "_lineColor_",
+                    "fillColorsField": "_fillColor_",
+                    "type": "column",
+                    "fillAlphas": 1,
+                    "lineAlpha": 1,
+                    "lineThickness": 1,
+                    "bullet": "none",
+                    "bulletAlpha": 1,
+                    "bulletBorderAlpha": 0,
+                    "bulletBorderThickness": 2,
+                    "showBalloon": true,
+                    "bulletSize": 8
+                }
+            ],
+            "guides": [],
+            "splitBy": {
+                "defaultColor": "#d6d6d6",
+                "seriesProperties": []
+            },
+            "rotate": false,
+            "commonGraphProperties": {
+                "lineColorField": "_lineColor_",
+                "fillColorsField": "_fillColor_",
+                "type": "column",
+                "fillAlphas": 1,
+                "lineAlpha": 1,
+                "lineThickness": 1,
+                "bullet": "none",
+                "bulletAlpha": 1,
+                "bulletBorderAlpha": 0,
+                "bulletBorderThickness": 2,
+                "showBalloon": true,
+                "bulletSize": 8
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "623c96fa-d5d9-419f-9028-25d3365abb21#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "846df958-0d36-4de3-aab5-b6f454949a6f#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "e3061380-59ea-4d73-a654-526427c612a0#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "cluster"
+                    ],
+                    "orderByFields": [
+                        "cluster asc"
+                    ],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "3d012bfa-0daa-48cd-8eb5-2633b430e377",
+            "name": "ClassSerial",
+            "caption": "<p>Class</p>\n",
+            "showLastUpdate": false,
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "serialChartWidget",
+            "category": {
+                "labelOverrides": [],
+                "byCategoryColors": false,
+                "labelsPlacement": "default",
+                "labelRotation": 0,
+                "fieldName": "eps",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "labelFormat": {
+                "name": "label",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "datePeriodPatterns": [
+                {
+                    "period": "ss",
+                    "pattern": "HH:mm:ss"
+                },
+                {
+                    "period": "mm",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "hh",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "DD",
+                    "pattern": "MMM d"
+                },
+                {
+                    "period": "MM",
+                    "pattern": "MMM"
+                },
+                {
+                    "period": "YYYY",
+                    "pattern": "yyyy"
+                }
+            ],
+            "chartScrollbar": {
+                "enabled": false,
+                "dragIcon": "dragIconRoundSmall",
+                "dragIconHeight": 20,
+                "dragIconWidth": 20,
+                "scrollbarHeight": 15
+            },
+            "categoryAxis": {
+                "titleRotation": 0,
+                "gridPosition": "start",
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "parseDates": false,
+                "minPeriod": "DD"
+            },
+            "valueAxis": {
+                "titleRotation": 270,
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "stackType": "none",
+                "integersOnly": false,
+                "logarithmic": false
+            },
+            "legend": {
+                "enabled": false,
+                "position": "bottom",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 0
+            },
+            "graphs": [
+                {
+                    "valueField": "value",
+                    "lineColor": "#ffaa00",
+                    "lineColorField": "_lineColor_",
+                    "fillColorsField": "_fillColor_",
+                    "type": "column",
+                    "fillAlphas": 1,
+                    "lineAlpha": 1,
+                    "lineThickness": 1,
+                    "bullet": "none",
+                    "bulletAlpha": 1,
+                    "bulletBorderAlpha": 0,
+                    "bulletBorderThickness": 2,
+                    "showBalloon": true,
+                    "bulletSize": 8
+                }
+            ],
+            "guides": [],
+            "splitBy": {
+                "defaultColor": "#d6d6d6",
+                "seriesProperties": []
+            },
+            "rotate": false,
+            "commonGraphProperties": {
+                "lineColorField": "_lineColor_",
+                "fillColorsField": "_fillColor_",
+                "type": "column",
+                "fillAlphas": 1,
+                "lineAlpha": 1,
+                "lineThickness": 1,
+                "bullet": "none",
+                "bulletAlpha": 1,
+                "bulletBorderAlpha": 0,
+                "bulletBorderThickness": 2,
+                "showBalloon": true,
+                "bulletSize": 8
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "3d012bfa-0daa-48cd-8eb5-2633b430e377#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "623c96fa-d5d9-419f-9028-25d3365abb21#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "846df958-0d36-4de3-aab5-b6f454949a6f#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "e3061380-59ea-4d73-a654-526427c612a0#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "eps"
+                    ],
+                    "orderByFields": [
+                        "eps asc"
+                    ],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa",
+            "name": "EPSSerial",
+            "caption": "<p>EPS</p>\n",
+            "showLastUpdate": false,
+            "noDataText": "",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "type": "serialChartWidget",
+            "category": {
+                "labelOverrides": [],
+                "byCategoryColors": false,
+                "labelsPlacement": "default",
+                "labelRotation": 0,
+                "fieldName": "min_samples",
+                "nullLabel": "Null",
+                "blankLabel": "Blank",
+                "defaultColor": "#d6d6d6",
+                "nullColor": "#d6d6d6",
+                "blankColor": "#d6d6d6"
+            },
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "labelFormat": {
+                "name": "label",
+                "type": "decimal",
+                "prefix": true,
+                "pattern": "#,###.#"
+            },
+            "datePeriodPatterns": [
+                {
+                    "period": "ss",
+                    "pattern": "HH:mm:ss"
+                },
+                {
+                    "period": "mm",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "hh",
+                    "pattern": "HH:mm"
+                },
+                {
+                    "period": "DD",
+                    "pattern": "MMM d"
+                },
+                {
+                    "period": "MM",
+                    "pattern": "MMM"
+                },
+                {
+                    "period": "YYYY",
+                    "pattern": "yyyy"
+                }
+            ],
+            "chartScrollbar": {
+                "enabled": false,
+                "dragIcon": "dragIconRoundSmall",
+                "dragIconHeight": 20,
+                "dragIconWidth": 20,
+                "scrollbarHeight": 15
+            },
+            "categoryAxis": {
+                "titleRotation": 0,
+                "gridPosition": "start",
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "parseDates": false,
+                "minPeriod": "DD"
+            },
+            "valueAxis": {
+                "titleRotation": 270,
+                "gridThickness": 1,
+                "gridAlpha": 0.15,
+                "axisThickness": 1,
+                "axisAlpha": 0.5,
+                "labelsEnabled": true,
+                "stackType": "none",
+                "integersOnly": false,
+                "logarithmic": false
+            },
+            "legend": {
+                "enabled": false,
+                "position": "bottom",
+                "markerSize": 15,
+                "markerType": "circle",
+                "align": "center",
+                "labelWidth": 100,
+                "valueWidth": 0
+            },
+            "graphs": [
+                {
+                    "valueField": "value",
+                    "lineColor": "#ffaa00",
+                    "lineColorField": "_lineColor_",
+                    "fillColorsField": "_fillColor_",
+                    "type": "column",
+                    "fillAlphas": 1,
+                    "lineAlpha": 1,
+                    "lineThickness": 1,
+                    "bullet": "none",
+                    "bulletAlpha": 1,
+                    "bulletBorderAlpha": 0,
+                    "bulletBorderThickness": 2,
+                    "showBalloon": true,
+                    "bulletSize": 8
+                }
+            ],
+            "guides": [],
+            "splitBy": {
+                "defaultColor": "#d6d6d6",
+                "seriesProperties": []
+            },
+            "rotate": false,
+            "commonGraphProperties": {
+                "lineColorField": "_lineColor_",
+                "fillColorsField": "_fillColor_",
+                "type": "column",
+                "fillAlphas": 1,
+                "lineAlpha": 1,
+                "lineThickness": 1,
+                "bullet": "none",
+                "bulletAlpha": 1,
+                "bulletBorderAlpha": 0,
+                "bulletBorderThickness": 2,
+                "showBalloon": true,
+                "bulletSize": 8
+            },
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "3d012bfa-0daa-48cd-8eb5-2633b430e377#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "846df958-0d36-4de3-aab5-b6f454949a6f#main"
+                        },
+                        {
+                            "type": "filter",
+                            "by": "whereClause",
+                            "fieldMap": [],
+                            "targetId": "e3061380-59ea-4d73-a654-526427c612a0#main"
+                        }
+                    ]
+                }
+            ],
+            "selectionMode": "single",
+            "categoryType": "groupByValues",
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [
+                        "min_samples"
+                    ],
+                    "orderByFields": [
+                        "min_samples asc"
+                    ],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "id": "623c96fa-d5d9-419f-9028-25d3365abb21",
+            "name": "MinSamplesSerial",
+            "caption": "<p>Min Samples</p>\n",
+            "showLastUpdate": false,
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [
+                        "capture_time asc"
+                    ],
+                    "statisticDefinitions": [],
+                    "maxFeatures": 100,
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "events": [
+                {
+                    "type": "selectionChanged",
+                    "actions": [
+                        {
+                            "type": "pan",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517"
+                        },
+                        {
+                            "type": "flashGeometry",
+                            "targetId": "1200f3f1-8f72-4ea6-af16-14f19e9a4517"
+                        }
+                    ]
+                }
+            ],
+            "type": "listWidget",
+            "iconType": "symbol",
+            "text": "<p>{cluster} - {capture_time}<br />\n{eps} -&nbsp;{min_samples}</p>\n",
+            "selectionMode": "single",
+            "id": "846df958-0d36-4de3-aab5-b6f454949a6f",
+            "name": "Feature List",
+            "caption": "<p>Features</p>\n",
+            "showLastUpdate": false,
+            "noDataText": "",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        },
+        {
+            "datasets": [
+                {
+                    "type": "serviceDataset",
+                    "dataSource": {
+                        "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517#ClusteringResults_6964"
+                    },
+                    "outFields": [
+                        "*"
+                    ],
+                    "groupByFields": [],
+                    "orderByFields": [],
+                    "statisticDefinitions": [
+                        {
+                            "onStatisticField": "OBJECTID",
+                            "outStatisticFieldName": "value",
+                            "statisticType": "count"
+                        }
+                    ],
+                    "querySpatialRelationship": "esriSpatialRelIntersects",
+                    "returnGeometry": false,
+                    "clientSideStatistics": false,
+                    "name": "main"
+                }
+            ],
+            "type": "indicatorWidget",
+            "defaultSettings": {
+                "topSection": {
+                    "fontSize": 80,
+                    "textInfo": {}
+                },
+                "middleSection": {
+                    "fontSize": 160,
+                    "textInfo": {
+                        "text": "{value}"
+                    }
+                },
+                "bottomSection": {
+                    "fontSize": 40,
+                    "textInfo": {
+                        "text": "Points"
+                    }
+                }
+            },
+            "comparison": "none",
+            "valueFormat": {
+                "name": "value",
+                "type": "decimal",
+                "prefix": false
+            },
+            "percentageFormat": {
+                "name": "percentage",
+                "type": "decimal",
+                "prefix": false
+            },
+            "ratioFormat": {
+                "name": "ratio",
+                "type": "decimal",
+                "prefix": false
+            },
+            "valueType": "statistic",
+            "showCaptionWhenNoValue": true,
+            "showDescriptionWhenNoValue": true,
+            "id": "e3061380-59ea-4d73-a654-526427c612a0",
+            "name": "PointCountIndicator",
+            "showLastUpdate": false,
+            "noDataText": "",
+            "showCaptionWhenNoData": true,
+            "showDescriptionWhenNoData": true
+        }
+    ],
+    "settings": {
+        "maxPaginationRecords": 50000,
+        "allowElementResizing": false
+    },
+    "mapOverrides": {
+        "trackedFeatureRadius": 60
+    },
+    "theme": "light",
+    "themeOverrides": {},
+    "numberPrefixOverrides": [
+        {
+            "key": "yotta",
+            "symbol": "Y",
+            "enabled": true
+        },
+        {
+            "key": "zeta",
+            "symbol": "Z",
+            "enabled": true
+        },
+        {
+            "key": "exa",
+            "symbol": "E",
+            "enabled": true
+        },
+        {
+            "key": "peta",
+            "symbol": "P",
+            "enabled": true
+        },
+        {
+            "key": "tera",
+            "symbol": "T",
+            "enabled": true
+        },
+        {
+            "key": "giga",
+            "symbol": "G",
+            "enabled": true
+        },
+        {
+            "key": "mega",
+            "symbol": "M",
+            "enabled": true
+        },
+        {
+            "key": "kilo",
+            "symbol": "k",
+            "enabled": true
+        },
+        {
+            "key": "base",
+            "symbol": "",
+            "enabled": true
+        },
+        {
+            "key": "deci",
+            "symbol": "d",
+            "enabled": false
+        },
+        {
+            "key": "centi",
+            "symbol": "c",
+            "enabled": false
+        },
+        {
+            "key": "milli",
+            "symbol": "m",
+            "enabled": false
+        },
+        {
+            "key": "micro",
+            "symbol": "µ",
+            "enabled": false
+        },
+        {
+            "key": "nano",
+            "symbol": "n",
+            "enabled": false
+        }
+    ],
+    "layout": {
+        "rootElement": {
+            "type": "stackLayoutElement",
+            "orientation": "col",
+            "elements": [
+                {
+                    "type": "stackLayoutElement",
+                    "orientation": "row",
+                    "elements": [
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "3d012bfa-0daa-48cd-8eb5-2633b430e377",
+                            "width": 1,
+                            "height": 0.5
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "ecdfc451-1a9e-4b76-b1d3-0cb9562e18aa",
+                            "width": 1,
+                            "height": 0.25
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "623c96fa-d5d9-419f-9028-25d3365abb21",
+                            "width": 1,
+                            "height": 0.25
+                        }
+                    ],
+                    "width": 0.2575001432048974,
+                    "height": 1
+                },
+                {
+                    "type": "itemLayoutElement",
+                    "id": "1200f3f1-8f72-4ea6-af16-14f19e9a4517",
+                    "width": 0.5512461602586576,
+                    "height": 1
+                },
+                {
+                    "type": "stackLayoutElement",
+                    "orientation": "row",
+                    "elements": [
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "e3061380-59ea-4d73-a654-526427c612a0",
+                            "width": 1,
+                            "height": 0.24601487778958556
+                        },
+                        {
+                            "type": "itemLayoutElement",
+                            "id": "846df958-0d36-4de3-aab5-b6f454949a6f",
+                            "width": 1,
+                            "height": 0.7539851222104145
+                        }
+                    ],
+                    "width": 0.19125369653644497,
+                    "height": 1
+                }
+            ],
+            "width": 1,
+            "height": 1
+        }
+    }
+}
